@@ -2,7 +2,7 @@ var express = require("express");
 var app = express();
 var socket = require("socket.io");
 app.use(express.static("public"));
-var Port = 3000||process.env.port;
+var Port = 8080||process.env.port;
 var server = app.listen(Port,()=>{
 	console.log("app is using port " , Port); 
 });
